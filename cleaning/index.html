@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111111" />
+  <!-- <link rel="stylesheet" href="css/adv.css" /> -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- подключение favicon -->
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="resources/favicon.png"
+  />
+  <title>Главная</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="container">
+    <div class="header__menu menu">
+      <nav class="menu__body">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="#">о нас</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">цены на услуги</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">как формируется цена?</a>
+          </li>
+        </ul>
+      </nav>
+      <img class="image header__logo" src="images/logo.svg" alt="" />
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="#">процесс работы</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">контакты</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">+373 68 55 77 68</a>
+        </li>
+      </ul>
+
+      <button type="button" class="menu__icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+ <section class="mainvideo">
+  <div class="container mainvideo__container">
+    <div class="mainvideo__info">
+      <div class="mainvideo__descr">
+        <h1 class="heading mainvideo__head">Master Cleaning</h1>
+        <span>Быстрая и качественная уборка любого помещения в Молдове</span>
+      </div>
+      <ul class="mainvideo__list">
+        <li class="mainvideo__item">
+          <a href="https://instagram.com/" class="mainvideo__link">
+            <svg class="mainvideo__svg" aria-hidden="true">
+              <use xlink:href="images/icons/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mainvideo__item">
+          <a href="https://instagram.com/" class="mainvideo__link">
+            <svg class="mainvideo__svg" aria-hidden="true">
+              <use xlink:href="images/icons/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mainvideo__item">
+          <a href="https://instagram.com/" class="mainvideo__link">
+            <svg class="mainvideo__svg" aria-hidden="true">
+              <use xlink:href="images/icons/sprite.svg#messenger"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mainvideo__clip">
+      <video
+        src="main_video.mp4"
+        playsinline
+        muted
+        autoplay
+        loop
+        class="mainvideo__video"
+      ></video>
+    </div>
+  </div>
+</section>
+
+
+      <main class="main"></main>
+      <footer class="footer">
+  <div class="container"></div>
+</footer>
+
+    </div>
+
+    <!-- подключение скриптов -->
+    <script defer src="js/libs.js"></script>
+    <script defer src="js/main.min.js"></script>
+  </body>
+</html>
