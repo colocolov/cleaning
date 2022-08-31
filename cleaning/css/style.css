@@ -900,7 +900,7 @@ input {
 }
 
 .process {
-  margin-bottom: 3300px;
+  margin-bottom: 300px;
 }
 .process__head {
   margin-bottom: 25px;
@@ -936,6 +936,79 @@ input {
   -webkit-transform: rotate(180deg) translateY(4px);
   -ms-transform: rotate(180deg) translateY(4px);
   transform: rotate(180deg) translateY(4px);
+}
+
+.component {
+  margin-bottom: 200px;
+}
+.component__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.component__left {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 400px;
+}
+.component__head {
+  margin-bottom: 50px;
+}
+.component__btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #F6F6F6;
+}
+.component__right {
+  margin-left: 20px;
+  border-left: 2px solid #333333;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.component__list {
+  width: 388px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 10px;
+  counter-reset: section;
+}
+.component__item {
+  position: relative;
+}
+.component__item::before {
+  position: absolute;
+  left: 10px;
+  top: 17px;
+  font-family: "Moula";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+  color: #FFFFFF;
+  counter-increment: section;
+  content: counter(section);
+}
+.component__item:not(:last-child) {
+  margin-bottom: 63px;
+}
+.component__icon {
+  width: 38px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+.component__img {
+  width: 400px;
+  height: 530px;
 }
 
 @media (min-width: 992px) {
