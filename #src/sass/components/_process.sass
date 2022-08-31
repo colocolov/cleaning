@@ -1,0 +1,32 @@
+.process
+  margin-bottom: 3300px
+  &__head
+    margin-bottom: 25px
+  &__slider
+    height: 700px
+    position: relative
+  &__slide
+    height: 700px
+  &__btn
+    position: absolute
+    top: 330px
+    // transform: translateY(330px)
+    // bottom: 0
+    // left: 0
+    // height: 42px
+    // width: 21px
+    cursor: pointer
+    z-index: 12
+    &-prev
+      left: 60px
+    &-fill
+      width: 21px
+      height: 42px
+      fill: $text
+      object-fit: cover
+      transition: fill 0.3 ease-in-out
+    &-next
+      right: 60px
+      // bottom: 4px
+      // transform:
+      transform: rotate(180deg) translateY(4px)

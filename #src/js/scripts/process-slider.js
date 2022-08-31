@@ -1,20 +1,20 @@
 // слайдер на главной
-const aboutSlider = new Swiper(".about__slider", {
-  // loop: true,
-  // autoplay: {
-  //   //пауза между прокруткой
-  //   delay: 3000,
-  //   //закончить на последнем слайде
-  //   // stopOnLastSlide: false,
-  //   //отключить после ручного переключения
-  //   // disableOnInteraction: false,
-  // },
+const processSlider = new Swiper(".process__slider", {
+  loop: true,
+  autoplay: {
+    //пауза между прокруткой
+    delay: 3000,
+    //закончить на последнем слайде
+    // stopOnLastSlide: false,
+    //отключить после ручного переключения
+    // disableOnInteraction: false,
+  },
   //скорость переключения слайдов
   speed: 800,
   // навигация по стрелкам
   navigation: {
-    nextEl: ".about__btn-next",
-    prevEl: ".about__btn-prev",
+    nextEl: ".process__btn-next",
+    prevEl: ".process__btn-prev",
     // disabledClass: "stories-button__unactive",
     clickable: true,
     // для ппрвильного направления
