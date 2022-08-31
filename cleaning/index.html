@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#111111" />
   <!-- <link rel="stylesheet" href="css/adv.css" /> -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <!-- подключение favicon -->
   <link
@@ -98,6 +99,68 @@
   </div>
 </section>
 
+      <section class="about">
+  <div class="container">
+    <h2 class="heading about__head">О нас</h2>
+    <div class="about__info">
+      <div class="about__img">
+        <img class="image" src="images/about.jpg" alt="" />
+      </div>
+      <div class="about__descr">
+        <p class="about__text">
+          Компания <strong>Master Cleaning</strong> работает в сфере клинига
+          более <strong>10</strong> лет. наша главная задача, чтобы наш клиент
+          остался довольным результатом. По этой причине мы прикладываем все
+          усилия, чтобы делать работу качественно, быстро. Опыт наших работников
+          позволяет нам достичь поставленных целей.
+        </p>
+        <button class="btn-reset about__more">Подробнее</button>
+      </div>
+
+      <div class="about__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide about__slide">
+            <h3 class="heading about__slide-head">Опытные клинеры</h3>
+            <p>Каждый сотрудник проходит строгий отбор и обучение</p>
+          </div>
+          <!-- slide -->
+          <div class="swiper-slide about__slide">
+            <h3 class="heading about__slide-head">Забота о клиенте</h3>
+            <p>
+              Мы готовы в любое время ответить на ваши звонки и предложить
+              лучшие учловия
+            </p>
+          </div>
+          <!-- slide -->
+          <div class="swiper-slide about__slide">
+            <h3 class="heading about__slide-head">Качественная химия</h3>
+            <p>Мы используем химию высокого качества и проверенную временем</p>
+          </div>
+          <!-- slide -->
+          <div class="swiper-slide about__slide">
+            <h3 class="heading about__slide-head">Гарантия качества</h3>
+            <p>
+              Мы исправим недочёты, которые вам не понравятся. Для нас важно
+              качество наших услуг
+            </p>
+          </div>
+          <!-- slide -->
+        </div>
+        <div class="about__btn about__btn-prev">
+          <svg class="about__btn-fill" aria-hidden="true">
+            <use xlink:href="images/icons/sprite.svg#arrow-slider"></use>
+          </svg>
+        </div>
+        <div class="about__btn about__btn-next">
+          <svg class="about__btn-fill" aria-hidden="true">
+            <use xlink:href="images/icons/sprite.svg#arrow-slider"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <main class="main"></main>
       <footer class="footer">
@@ -107,7 +170,9 @@
     </div>
 
     <!-- подключение скриптов -->
-    <script defer src="js/libs.js"></script>
+    <script defer src="js/vendor/jquery-3.5.1.min.js"></script>
+    <script defer src="js/vendor/swiper-bundle.min.js"></script>
+    <!-- <script defer src="js/libs.js"></script> -->
     <script defer src="js/main.min.js"></script>
   </body>
 </html>
