@@ -1,0 +1,36 @@
+.prices
+  margin-bottom: 200px
+  &__container
+    display: flex
+    align-items: flex-start
+  &__left
+    flex-shrink: 0
+  &__head
+    margin-bottom: 50px
+  &__btn
+    display: inline-block
+    text-transform: uppercase
+    @include font(700, 20, 24)
+  &__right
+    margin-left: 140px
+  &__list
+  &__item
+    display: flex
+    align-items: flex-start
+    padding-top: 50px
+    padding-bottom: 50px
+    border-bottom: 2px solid $text
+    &:first-child
+      border-top: 2px solid $text
+
+  &__service
+    flex-shrink: 0
+    width: 252px
+    margin-right: 23px
+    &-title
+      margin-bottom: 5px
+      @include font(700, 20, 24)
+    &-price
+      @include font(500, 20, 24)
+  &__descr
+    @include font(500, 16, 20)

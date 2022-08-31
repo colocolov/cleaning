@@ -833,6 +833,71 @@ input {
   transform: rotate(180deg);
 }
 
+.prices {
+  margin-bottom: 200px;
+}
+.prices__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.prices__left {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.prices__head {
+  margin-bottom: 50px;
+}
+.prices__btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.prices__right {
+  margin-left: 140px;
+}
+.prices__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #333333;
+}
+.prices__item:first-child {
+  border-top: 2px solid #333333;
+}
+.prices__service {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 252px;
+  margin-right: 23px;
+}
+.prices__service-title {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.prices__service-price {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.prices__descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
 @media (min-width: 992px) {
   .menu__item:hover::before {
     width: 100%;
