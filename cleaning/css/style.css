@@ -1011,6 +1011,34 @@ input {
   height: 530px;
 }
 
+.discount {
+  margin-bottom: 200px;
+  background-color: #000000;
+  height: 500px;
+  padding-top: 65px;
+  background-image: url(../images/discount.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.discount__text {
+  font-family: "Moula";
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 1.078125;
+}
+.discount__text span {
+  color: #F6F6F6;
+}
+.discount__btn {
+  display: inline-block;
+  color: #F6F6F6;
+  padding: 18px 35px;
+  -webkit-transform: translate(704px, -90px);
+  -ms-transform: translate(704px, -90px);
+  transform: translate(704px, -90px);
+}
+
 @media (min-width: 992px) {
   .menu__item:hover::before {
     width: 100%;
