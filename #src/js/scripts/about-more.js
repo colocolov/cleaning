@@ -2,7 +2,7 @@ const more = document.querySelector(".about__more");
 const text = document.querySelector(".about__text");
 
 more.onclick = function () {
-  console.log(text);
+  // console.log(text);
   text.classList.add("about__opened");
 
   if (text.style.height === "90px") {

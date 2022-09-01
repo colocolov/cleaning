@@ -1,0 +1,25 @@
+.hygiene
+  margin-bottom: 200px
+  &__container
+    display: flex
+    align-items: flex-start
+  &__img
+    width: 400px
+    height: 530px
+    margin-right: 96px
+    flex-shrink: 0
+  &__head
+    margin-bottom: 40px
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      height: 2px
+      width: 100%
+      bottom: -18px
+      left: 0
+      background-color: $text
+  &__info
+    p
+      &:not(:last-child)
+        margin-bottom: 30px

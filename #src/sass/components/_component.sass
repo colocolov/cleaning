@@ -29,12 +29,14 @@
     &::before
       position: absolute
       left: 10px
-      top: 17px
+      top: 16px
       font-family: "Moula"
       @include font(700, 28, 28)
       color: $white
       counter-increment: section
       content: counter(section)
+      width: 17px
+      text-align: center
     &:not(:last-child)
       margin-bottom: 63px
   &__icon
