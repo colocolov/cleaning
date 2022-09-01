@@ -404,9 +404,9 @@ input {
   border-radius: 30px;
   padding: 18px 66px;
   color: #333333;
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear;
 }
 
 .unvisible {
@@ -671,9 +671,14 @@ input {
 .mainvideo__svg {
   width: 30px;
   height: 30px;
-  -webkit-transition: fill 0.3s linear;
-  -o-transition: fill 0.3s linear;
-  transition: fill 0.3s linear;
+  fill: #F6F6F6;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.mainvideo__svg.messenger {
+  stroke: #F6F6F6;
+  stroke-width: 1;
 }
 .mainvideo__clip {
   position: absolute;
@@ -764,6 +769,9 @@ input {
   position: relative;
 }
 .about__more::before {
+  -webkit-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear;
   position: absolute;
   content: "";
   bottom: -3px;
@@ -822,9 +830,11 @@ input {
   fill: #333333;
   -o-object-fit: cover;
   object-fit: cover;
-  -webkit-transition: fill 0.3 ease-in-out;
-  -o-transition: fill 0.3 ease-in-out;
-  transition: fill 0.3 ease-in-out;
+  -webkit-transition: stroke 0.3s linear;
+  -o-transition: stroke 0.3s linear;
+  transition: stroke 0.3s linear;
+  stroke: #333333;
+  stroke-width: 5;
 }
 .about__btn-next {
   left: 370px;
@@ -928,9 +938,11 @@ input {
   fill: #333333;
   -o-object-fit: cover;
   object-fit: cover;
-  -webkit-transition: fill 0.3 ease-in-out;
-  -o-transition: fill 0.3 ease-in-out;
-  transition: fill 0.3 ease-in-out;
+  -webkit-transition: stroke 0.3s linear;
+  -o-transition: stroke 0.3s linear;
+  transition: stroke 0.3s linear;
+  stroke: #333333;
+  stroke-width: 5;
 }
 .process__btn-next {
   right: 60px;
@@ -1152,6 +1164,9 @@ input {
   padding: 25px;
   position: relative;
   z-index: 2;
+  -webkit-transition: padding 0.3s linear;
+  -o-transition: padding 0.3s linear;
+  transition: padding 0.3s linear;
 }
 .contact__svg {
   width: 50px;
@@ -1296,6 +1311,10 @@ input {
   color: #F6F6F6;
   font-weight: 700;
   margin-right: 155px;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border 0.3s linear;
+  -o-transition: border 0.3s linear;
+  transition: border 0.3s linear;
 }
 
 @media (min-width: 992px) {
@@ -1304,6 +1323,27 @@ input {
   }
   .mainvideo__svg:hover {
     fill: #7AE582;
+  }
+  .mainvideo__svg:hover.messenger {
+    stroke: #7AE582;
+  }
+  .about__more:hover::before {
+    background-color: #7AE582;
+  }
+  .about__btn-fill:hover {
+    stroke: #7AE582;
+  }
+  .btn:hover {
+    background: #7AE582;
+  }
+  .process__btn-fill:hover {
+    stroke: #7AE582;
+  }
+  .contact__link:hover {
+    padding: 21px;
+  }
+  .footer__contact:hover {
+    border-bottom: 1px solid #7AE582;
   }
 }
 /*# sourceMappingURL=style.css.map */

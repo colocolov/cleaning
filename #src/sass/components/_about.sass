@@ -43,6 +43,7 @@
     text-transform: uppercase
     position: relative
     &::before
+      transition: background 0.3s linear
       position: absolute
       content: ''
       bottom: -3px
@@ -85,7 +86,9 @@
       height: 42px
       fill: $text
       object-fit: cover
-      transition: fill 0.3 ease-in-out
+      transition: stroke 0.3s linear
+      stroke: $text
+      stroke-width: 5
     &-next
       left: 370px
       bottom: 4px
