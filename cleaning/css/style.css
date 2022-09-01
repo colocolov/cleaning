@@ -796,6 +796,7 @@ input {
   line-height: 1.2;
   text-transform: none;
   margin-bottom: 20px;
+  width: 250px;
 }
 .about__slide p {
   font-weight: 500;
@@ -1022,6 +1023,7 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 .discount__text {
   font-family: "Moula";
@@ -1094,6 +1096,7 @@ input {
 .contact__head {
   color: #F6F6F6;
   margin-right: 65px;
+  width: 331px;
 }
 .contact__list {
   display: -webkit-box;
@@ -1167,9 +1170,9 @@ input {
   align-items: flex-start;
 }
 .faq__head {
-  margin-right: 128px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  width: 400px;
 }
 
 .accordeon {
@@ -1194,6 +1197,7 @@ input {
   position: relative;
   cursor: pointer;
   color: #000000;
+  padding-right: 35px;
 }
 .accordeon__name::before {
   content: "";
@@ -1236,6 +1240,62 @@ input {
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
+}
+
+.footer {
+  background: -o-linear-gradient(337.25deg, #333333 1.07%, #181818 100%);
+  background: linear-gradient(112.75deg, #333333 1.07%, #181818 100%);
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 70px;
+}
+.footer__logo {
+  width: 174px;
+  height: 65px;
+  margin-right: 246px;
+}
+.footer__menu {
+  margin-right: 173px;
+}
+.footer__head {
+  color: #F6F6F6;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.0833333333;
+  position: relative;
+  margin-bottom: 10px;
+  text-transform: none;
+  display: inline-block;
+}
+.footer__head::before {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #7AE582;
+}
+.footer__item {
+  font-weight: 400;
+  color: #F6F6F6;
+  margin-bottom: 3px;
+}
+.footer__bottom {
+  padding-left: 420px;
+}
+.footer__contact {
+  color: #F6F6F6;
+  font-weight: 700;
+  margin-right: 155px;
 }
 
 @media (min-width: 992px) {
