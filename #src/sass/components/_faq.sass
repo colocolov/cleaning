@@ -1,0 +1,54 @@
+.faq
+  margin-bottom: 200px
+  &__container
+    display: flex
+    align-items: flex-start
+  &__head
+    margin-right: 128px
+    flex-shrink: 0
+
+.accordeon
+  width: 100%
+  &__item
+    overflow: hidden
+    transition: all 0.25s ease-out
+    padding: 18px 20px
+    border-bottom: 2px solid $text
+    &:first-child
+      border-top: 2px solid $text
+
+  &__name
+    font-family: "Montserrat", sans-serif
+    @include font(500, 20, 24)
+    position: relative
+    cursor: pointer
+    color: $black
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      transition: all 0.5s ease-out
+      background: url(../images/icons/sprite.svg#arrow-faq) no-repeat center center
+      height: 24px
+      width: 24px
+      background-color: transparent
+      cursor: pointer
+      outline: none
+  &__content
+    margin: 0
+    max-height: 0
+    opacity: 0
+    overflow: hidden
+    transition: all 0.5s ease-out
+    font-weight: 400
+    color: $black
+.active .accordeon
+  &__content
+    opacity: 1
+    max-height: max-content
+    transition: all 0.5s ease-out
+    padding-top: 36px
+  &__name
+    &::before
+      transform: rotate(135deg)
