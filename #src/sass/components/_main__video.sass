@@ -16,14 +16,17 @@
   &__descr
     margin-top: 160px
     color: $white
-    width: 510px
+    width: 580px
     span
       font-family: 'Montserrat', sans-serif
       @include font(300, 20, 24)
+      margin-right: 150px
+      display: block
   &__head
     margin-bottom: 8px
     @include font(300, 70, 76)
     color: $bgc
+    text-transform: none
   &__list
     display: flex
     align-items: center
@@ -65,7 +68,7 @@
       height: 100%
       background: linear-gradient(90deg, #000000 0%, rgba(246, 246, 246, 0) 100%)
       opacity: 0.6
-      // z-index: -1
+      z-index: 2
   &__video
     // position: absolute
     // top: 0

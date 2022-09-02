@@ -32,10 +32,41 @@
     color: $bgc
     margin-bottom: 3px
   &__bottom
-    padding-left: 420px
+    // padding-left: 420px
+    display: flex
+    align-items: flex-end
+    justify-content: flex-end
   &__contact
     color: $bgc
     font-weight: 700
-    margin-right: 155px
     border-bottom: 1px solid transparent
     transition: border 0.3s linear
+  &__phone
+    margin-right: 79px
+  &__email
+    margin-right: 155px
+  &__soc-list
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      bottom: -7px
+      left: 0
+      height: 1px
+      width: 150px
+      background-color: $bgc
+  &__soc-item
+    &:not(:last-child)
+      margin-right: 30px
+  &__svg
+    width: 30px
+    height: 30px
+    fill: $bgc
+    transition: all 0.3s linear
+    // stroke: $bgc
+    &.messenger
+      stroke: $bgc
+      stroke-width: 1
