@@ -1,5 +1,5 @@
 .about
-  margin-bottom: 200px
+  @include mb
   &__head
     margin-bottom: 10px
   &__info
@@ -12,18 +12,11 @@
     margin-right: 20px
   &__descr
     position: relative
-    @include font(400, 20, 24)
+    font-weight: 400
     width: 362px
     flex-shrink: 0
     margin-right: 59px
-    &::before
-      position: absolute
-      content: ''
-      bottom: 0px
-      right: -59px
-      height: 285px
-      width: 2px
-      background-color: $text
+
   &__text
     height: 99px
     // для плавного появления всего тееста
@@ -39,7 +32,7 @@
     // overflow: auto
     margin-bottom: 0
   &__more
-    @include font(700, 20, 24)
+    font-weight: 700
     text-transform: uppercase
     position: relative
     &::before
@@ -55,6 +48,14 @@
     position: relative
     height: 285px
     margin-left: 20px
+    &::before
+      position: absolute
+      content: ''
+      bottom: 0px
+      left: -20px
+      height: 285px
+      width: 2px
+      background-color: $text
   &__slide
     display: flex
     flex-direction: column
@@ -66,7 +67,7 @@
       margin-bottom: 20px
       width: 250px
     p
-      @include font(500, 20, 24)
+      // @include font(500, 20, 24)
       width: 242px
       flex-shrink: 0
   &__btn

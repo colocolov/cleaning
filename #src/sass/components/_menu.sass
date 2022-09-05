@@ -1,7 +1,9 @@
 .menu
   // margin-left: 50px
   &__body
-    margin-top: -5px
+    // margin-top: -5px
+    display: flex
+    align-items: center
     @media (max-width: 768px)
       position: fixed
       top: 0
@@ -44,7 +46,7 @@
     // text-transform: uppercase
     transition: color 0.3s ease-in-out
     &:not(:last-child)
-      margin-right: 39px
+      margin-right: 30px
     // нижняя линия при наведении
     &::before
       position: absolute
