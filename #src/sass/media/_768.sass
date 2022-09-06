@@ -8,6 +8,11 @@
   .heading
     font-weight: 700
 
+  .menu__item:not(:last-child)
+    margin-right: 0
+  .menu__list
+    margin-bottom: 40px
+
   .header
     // position: fixed
     top: 0
@@ -19,11 +24,16 @@
     width: 30px
     height: 37px
     z-index: 15
-  .menu__body::before
-    content: none
-  .menu__item
-    color: $bgc
-    font-weight: 400
+  .header__phone
+    margin-left: 0
+    margin-right: 0 !important
+    margin-bottom: 40px !important
+    font-weight: 700
+    font-size: 28px
+  .header__ru
+    margin-right: 0 !important
+    &::before
+      content: none
 
   .mainvideo
     height: 500px
@@ -37,6 +47,8 @@
   .mainvideo__descr
     margin-top: 0
     margin-bottom: 20px
+    span
+      width: 327px
   .mainvideo__head
     @include font(700, 50, 54)
     margin-bottom: 0
@@ -68,7 +80,7 @@
     height: 80vh
   .about__descr
     position: absolute
-    top: 40%
+    top: 20%
     left: 30px
     color: $bgc
   .about__text
@@ -115,6 +127,7 @@
     display: flex
     flex-direction: column
     margin-left: 30px
+    padding-right: 30px
   .process__item
     position: relative
     padding-left: 45px
@@ -197,6 +210,10 @@
     flex-direction: column
   .faq__head
     margin-bottom: 20px
+  .accordeon
+    padding-left: 20px
+  .accordeon__item
+    padding: 18px 20px 18px 0
 
   .footer
     padding-top: 20px
