@@ -1015,6 +1015,7 @@ input {
   content: counter(section);
   width: 17px;
   text-align: center;
+  z-index: 3;
 }
 .component__item:not(:last-child) {
   margin-bottom: 63px;
@@ -1023,6 +1024,19 @@ input {
   width: 38px;
   height: 50px;
   margin-bottom: 5px;
+  opacity: 0;
+  -webkit-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+.component__icon.element-show {
+  opacity: 1;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
 }
 .component__img {
   width: 400px;
@@ -1779,6 +1793,12 @@ input {
     width: 100%;
     height: 100%;
     z-index: -1;
+  }
+  .component__icon {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
   }
   .component__item::before {
     color: #333333;
