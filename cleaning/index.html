@@ -23,7 +23,10 @@
       <header class="header">
   <div class="container header__container">
     <div class="header__logo">
-      <img class="image header__logo" src="images/logo.svg" alt="" />
+      <picture>
+        <source media="(max-width:768px)" srcset="images/logo-light.svg" />
+        <img class="image" src="images/logo.svg" alt="" />
+      </picture>
     </div>
     <div class="header__menu menu">
       <nav class="menu__body">
@@ -238,21 +241,70 @@
 </section>
 
       <section class="process" id="process">
-  <div class="container">
+  <div class="container process__container">
     <h2 class="heading process__head">Процесс работы</h2>
 
     <div class="process__slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide process__slide">
-          <img class="image" src="images/process-slider/slide-1.jpg" alt="" />
+          <picture class="process__img">
+            <source
+              media="(max-width: 768px)"
+              srcset="images/process-slider/slide-1-mini.jpg"
+            />
+            <img class="image" src="images/process-slider/slide-1.jpg" alt="" />
+          </picture>
+          <ul class="process__list">
+            <li class="process__item">Моем фасады и мебель</li>
+            <li class="process__item">Протираем все поверхности</li>
+            <li class="process__item">Протираем двери</li>
+            <li class="process__item">Моем плиту, раковину и столешницу</li>
+            <li class="process__item">Протираем выключатели</li>
+            <li class="process__item">Протераем подаконники и батареи</li>
+            <li class="process__item">Сухая и влажная уборка пола</li>
+          </ul>
         </div>
         <!-- slide -->
         <div class="swiper-slide process__slide">
-          <img class="image" src="images/process-slider/slide-2.jpg" alt="" />
+          <picture class="process__img">
+            <source
+              media="(max-width: 768px)"
+              srcset="images/process-slider/slide-2-mini.jpg"
+            />
+            <img class="image" src="images/process-slider/slide-2.jpg" alt="" />
+          </picture>
+          <ul class="process__list">
+            <li class="process__item">Убираем и выносим мусор</li>
+            <li class="process__item">
+              Моем зеркала и все стеклянные поверхности
+            </li>
+            <li class="process__item">
+              Протераем все поверхности, открытые места,подаконники и батареи.
+            </li>
+            <li class="process__item">Сухая и влажная уборка пола.</li>
+          </ul>
         </div>
         <!-- slide -->
         <div class="swiper-slide process__slide">
-          <img class="image" src="images/process-slider/slide-3.jpg" alt="" />
+          <picture class="process__img">
+            <source
+              media="(max-width: 768px)"
+              srcset="images/process-slider/slide-3-mini.jpg"
+            />
+            <img class="image" src="images/process-slider/slide-3.jpg" alt="" />
+          </picture>
+          <ul class="process__list">
+            <li class="process__item">
+              Протераем все поверхности, открытые места
+            </li>
+            <li class="process__item">
+              Моем зеркала и все стеклянные поверхности
+            </li>
+            <li class="process__item">Дезинфецыруем и моем унитаз</li>
+            <li class="process__item">Моем раковину</li>
+            <li class="process__item">Моем душевую кабину, ванную</li>
+            <li class="process__item">Сухая и влажная уборка пола</li>
+          </ul>
         </div>
         <!-- slide -->
       </div>
@@ -281,25 +333,49 @@
       <ul class="component__list">
         <li class="component__item">
           <div class="component__icon">
-            <img class="image" src="images/icons/sprite.svg#drop" alt="" />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="images/icons/sprite.svg#drop-light"
+              />
+              <img class="image" src="images/icons/sprite.svg#drop" alt="" />
+            </picture>
           </div>
           <p class="component__text">Частота уборки помещения</p>
         </li>
         <li class="component__item">
           <div class="component__icon">
-            <img class="image" src="images/icons/sprite.svg#drop" alt="" />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="images/icons/sprite.svg#drop-light"
+              />
+              <img class="image" src="images/icons/sprite.svg#drop" alt="" />
+            </picture>
           </div>
           <p class="component__text">Площадь и количество помещения</p>
         </li>
         <li class="component__item">
           <div class="component__icon">
-            <img class="image" src="images/icons/sprite.svg#drop" alt="" />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="images/icons/sprite.svg#drop-light"
+              />
+              <img class="image" src="images/icons/sprite.svg#drop" alt="" />
+            </picture>
           </div>
           <p class="component__text">Степень загрязнения помещения</p>
         </li>
         <li class="component__item">
           <div class="component__icon">
-            <img class="image" src="images/icons/sprite.svg#drop" alt="" />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="images/icons/sprite.svg#drop-light"
+              />
+              <img class="image" src="images/icons/sprite.svg#drop" alt="" />
+            </picture>
           </div>
           <p class="component__text">Дополнительные услуги</p>
         </li>

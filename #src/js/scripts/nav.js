@@ -35,7 +35,6 @@ if (isMobile.any()) {
 
 // меню бургер
 const iconMenu = document.querySelector(".menu__icon");
-console.log(iconMenu);
 const menuBody = document.querySelector(".menu__body");
 const menuLink = document.querySelectorAll(".menu__item");
 if (iconMenu) {

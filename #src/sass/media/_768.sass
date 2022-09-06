@@ -1,12 +1,226 @@
 @media ( max-width:768px )
   body
+    @include font(500, 16, 20)
     &._lock
       overflow: hidden
+  .container
+    padding: 0 30px
+  .heading
+    font-weight: 700
 
   .header
-    position: fixed
+    // position: fixed
     top: 0
     left: 0
     width: 100%
-    z-index: 7
-    background-color: $black
+    z-index: 11
+    background-color: transparent
+  .header__logo
+    width: 30px
+    height: 37px
+    z-index: 15
+  .menu__body::before
+    content: none
+  .menu__item
+    color: $bgc
+    font-weight: 400
+
+  .mainvideo
+    height: 500px
+    margin-top: -100px
+  .mainvideo__container
+    padding: 0
+  .mainvideo__info
+    height: 500px
+    justify-content: flex-end
+    padding-left: 30px
+  .mainvideo__descr
+    margin-top: 0
+    margin-bottom: 20px
+  .mainvideo__head
+    @include font(700, 50, 54)
+    margin-bottom: 0
+  .mainvideo__list
+    display: none
+    overflow: hidden
+    height: 0
+    width: 0
+  .mainvideo__clip
+    width: 100%
+    height: 500px
+    left: 0
+
+  .mainvideo,
+  .about,
+  .prices,
+  .process,
+  .component,
+  .discount,
+  .hygiene,
+  .contact,
+  .faq
+    margin-bottom: 40px
+
+  .about__info
+    position: relative
+  .about__img
+    width: calc( 100vw - 60px )
+    height: 80vh
+  .about__descr
+    position: absolute
+    top: 40%
+    left: 30px
+    color: $bgc
+  .about__text
+    @include font(500, 18, 22)
+    height: 88px
+  .about__more
+    color: $bgc
+    &::before
+      background-color: $bgc
+
+  .prices__container
+    flex-direction: column
+  .prices__item
+    flex-direction: column
+    padding-top: 35px
+    padding-bottom: 35px
+  .prices__head
+    margin-bottom: 0
+  .prices__service
+    width: auto
+    margin-bottom: 10px
+  .prices__item:first-child
+    border-top: none
+  .prices__item:last-child
+    border-bottom: none
+  .prices__btn
+    margin: 0 auto
+
+  .process__container
+    padding: 0
+  .process__head
+    padding-left: 30px
+  .process__slider,
+  .process__slide
+    height: auto
+  .process__btn
+    top: 22vh
+  .process__img
+    display: block
+    box-sizing: border-box
+    height: 45vh
+    margin-bottom: 20px
+  .process__list
+    display: flex
+    flex-direction: column
+    margin-left: 30px
+  .process__item
+    position: relative
+    padding-left: 45px
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      background-color: $green
+      width: 20px
+      height: 20px
+      border-radius: 50%
+    &:not(:last-child)
+      margin-bottom: 10px
+
+  .component__container
+    flex-direction: column
+  .component__left
+    width: 100%
+  .component__btn
+    display: none
+    overflow: hidden
+    height: 0
+    width: 0
+  .component__right
+    margin-left: 0
+    width: 100%
+    position: relative
+    border-left: none
+    flex-shrink: 0
+    padding: 30px
+  .component__list
+    width: 100%
+  .component__img
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: -1
+  .component__item::before
+    color: $text
+  .component__text
+    color: $bgc
+    font-size: 20px
+
+  .discount
+    height: auto
+    padding-bottom: 68px
+  .discount__text
+    font-size: 70px
+    line-height: 75px
+
+  .hygiene__container
+    flex-direction: column
+  .hygiene__img
+    position: relative
+    width: 100%
+    height: 80vh
+    margin-bottom: 20px
+  .hygiene__info
+    padding-bottom: 20px
+    border-bottom: 1px solid $text
+  .hygiene__head
+    position: absolute
+    top: 20px
+    left: 10px
+    color: $bgc
+    &::before
+      content: none
+
+  .contact
+    padding-top: 20px
+    padding-bottom: 20px
+  .contact__head
+    width: 100%
+
+  .faq__container
+    flex-direction: column
+  .faq__head
+    margin-bottom: 20px
+
+  .footer
+    padding-top: 20px
+    padding-bottom: 20px
+  .footer__top
+    flex-direction: column
+    margin-bottom: 40px
+  .footer__bottom
+    flex-direction: column
+    align-items: flex-start
+  .footer__logo
+    margin-bottom: 40px
+  .footer__menu,
+  .footer__services,
+  .footer__phone,
+  .footer__soc-list
+    width: 100%
+  .footer__item
+    font-size: 20px
+  .footer__menu
+    margin-bottom: 40px
+  .footer__email
+    margin-bottom: 20px
+    font-size: 20px
+  .footer__phone
+    margin-bottom: 40px
+    font-size: 20px
