@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const self = e.currentTarget;
       const title = self.querySelector(".accordeon__name");
       const content = self.querySelector(".accordeon__decription");
-
       self.classList.toggle("active");
     });
   });
