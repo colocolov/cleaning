@@ -5,6 +5,7 @@
   &__info
     display: flex
     align-items: flex-end
+    position: relative
   &__img
     width: 400px
     height: 570px
@@ -56,10 +57,13 @@
       height: 285px
       width: 2px
       background-color: $text
+      z-index: 1
   &__slide
     display: flex
     flex-direction: column
     align-items: flex-start
+    z-index: 2
+    // opacity: 1 !important
     &-head
       font-family: 'Montserrat'
       @include font(700, 20, 24)
@@ -75,13 +79,13 @@
     // top: 50%
     // transform: translateY(-50%)
     bottom: 0
-    left: 0
-    // height: 42px
-    // width: 21px
+    right: 0
+    height: 42px
+    width: 21px
     cursor: pointer
     z-index: 12
     &-prev
-      left: 300px
+      right: 50px
     &-fill
       width: 21px
       height: 42px
@@ -91,6 +95,13 @@
       stroke: $text
       stroke-width: 5
     &-next
-      left: 370px
+      // right: 0px
       bottom: 4px
-      transform: rotate(180deg)
+      transform: rotate(180deg) translateY(-4px)
+
+  &__slider-arr
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 46px
+    width: 100%

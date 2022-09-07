@@ -5,13 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#111111" />
-  <!-- <link rel="stylesheet" href="css/adv.css" /> -->
+  <!-- подключение стилей -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.css?ver=1.0.1" />
+  <link rel="stylesheet" href="css/style.css?ver=1.0.3" />
   <!-- подключение скриптов -->
-  <!-- <script defer src="js/vendor/jquery-3.5.1.min.js"></script> -->
   <script defer src="js/vendor/swiper-bundle.min.js"></script>
-  <!-- <script defer src="js/libs.js"></script> -->
   <script defer src="js/main.min.js"></script>
   <!-- подключение favicon -->
   <link
@@ -20,7 +18,7 @@
     sizes="32x32"
     href="resources/favicon.png"
   />
-  <title>Главная</title>
+  <title>Master Cleaning - уборка помещений</title>
 </head>
 
   <body>
@@ -30,7 +28,7 @@
     <div class="header__logo">
       <picture>
         <source media="(max-width:768px)" srcset="images/logo-light.svg" />
-        <img class="image" src="images/logo.svg" alt="" />
+        <img class="image" src="images/logo.svg" alt="Логотип Master Cleaning" />
       </picture>
     </div>
     <div class="header__menu menu">
@@ -88,14 +86,14 @@
           </a>
         </li>
         <li class="mainvideo__item">
-          <a href="https://instagram.com/" class="mainvideo__link">
+          <a href="https://facebook.com/" class="mainvideo__link">
             <svg class="mainvideo__svg" aria-hidden="true">
               <use xlink:href="images/icons/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="mainvideo__item">
-          <a href="https://instagram.com/" class="mainvideo__link">
+          <a href="#" class="mainvideo__link">
             <svg class="mainvideo__svg messenger" aria-hidden="true">
               <use xlink:href="images/icons/sprite.svg#messenger"></use>
             </svg>
@@ -121,7 +119,7 @@
     <h2 class="heading about__head">О нас</h2>
     <div class="about__info">
       <div class="about__img">
-        <img class="image" src="images/about.jpg" alt="" />
+        <img class="image" src="images/about.jpg" alt="Уборка робот-пылесосом" />
       </div>
       <div class="about__descr">
         <p class="about__text">
@@ -140,7 +138,6 @@
             <h3 class="heading about__slide-head">Опытные клинеры</h3>
             <p>Каждый сотрудник проходит строгий отбор и обучение</p>
           </div>
-          <!-- slide -->
           <div class="swiper-slide about__slide">
             <h3 class="heading about__slide-head">Забота о клиенте</h3>
             <p>
@@ -148,7 +145,6 @@
               лучшие условия
             </p>
           </div>
-          <!-- slide -->
           <div class="swiper-slide about__slide">
             <h3 class="heading about__slide-head">
               Качественная бытовая химия
@@ -157,7 +153,6 @@
               Мы используем проверенную временем, качественную бытовую химию
             </p>
           </div>
-          <!-- slide -->
           <div class="swiper-slide about__slide">
             <h3 class="heading about__slide-head">Гарантия качества</h3>
             <p>
@@ -165,8 +160,9 @@
               качество наших услуг
             </p>
           </div>
-          <!-- slide -->
         </div>
+      </div>
+      <div class="about__slider-arr">
         <div class="about__btn about__btn-prev">
           <svg class="about__btn-fill" aria-hidden="true">
             <use xlink:href="images/icons/sprite.svg#arrow-slider"></use>
@@ -248,7 +244,6 @@
       <section class="process" id="process">
   <div class="container process__container">
     <h2 class="heading process__head">Процесс работы</h2>
-
     <div class="process__slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide process__slide">
@@ -257,7 +252,11 @@
               media="(max-width: 768px)"
               srcset="images/process-slider/slide-1-mini.jpg"
             />
-            <img class="image" src="images/process-slider/slide-1.jpg" alt="" />
+            <img
+              class="image"
+              src="images/process-slider/slide-1.jpg"
+              alt="Уборка кухни"
+            />
           </picture>
           <ul class="process__list">
             <li class="process__item">Моем фасады и мебель</li>
@@ -269,14 +268,17 @@
             <li class="process__item">Сухая и влажная уборка пола</li>
           </ul>
         </div>
-        <!-- slide -->
         <div class="swiper-slide process__slide">
           <picture class="process__img">
             <source
               media="(max-width: 768px)"
               srcset="images/process-slider/slide-2-mini.jpg"
             />
-            <img class="image" src="images/process-slider/slide-2.jpg" alt="" />
+            <img
+              class="image"
+              src="images/process-slider/slide-2.jpg"
+              alt="Уборка жилых помещений"
+            />
           </picture>
           <ul class="process__list">
             <li class="process__item">Убираем и выносим мусор</li>
@@ -289,14 +291,17 @@
             <li class="process__item">Сухая и влажная уборка пола.</li>
           </ul>
         </div>
-        <!-- slide -->
         <div class="swiper-slide process__slide">
           <picture class="process__img">
             <source
               media="(max-width: 768px)"
               srcset="images/process-slider/slide-3-mini.jpg"
             />
-            <img class="image" src="images/process-slider/slide-3.jpg" alt="" />
+            <img
+              class="image"
+              src="images/process-slider/slide-3.jpg"
+              alt="Уборка ванных"
+            />
           </picture>
           <ul class="process__list">
             <li class="process__item">
@@ -311,7 +316,6 @@
             <li class="process__item">Сухая и влажная уборка пола</li>
           </ul>
         </div>
-        <!-- slide -->
       </div>
       <div class="process__btn process__btn-prev">
         <svg class="process__btn-fill" aria-hidden="true">
@@ -343,7 +347,11 @@
                 media="(max-width: 768px)"
                 srcset="images/icons/sprite.svg#drop-light"
               />
-              <img class="image" src="images/icons/sprite.svg#drop" alt="" />
+              <img
+                class="image"
+                src="images/icons/sprite.svg#drop"
+                alt="иконка капли"
+              />
             </picture>
           </div>
           <p class="component__text">Частота уборки помещения</p>
@@ -355,7 +363,11 @@
                 media="(max-width: 768px)"
                 srcset="images/icons/sprite.svg#drop-light"
               />
-              <img class="image" src="images/icons/sprite.svg#drop" alt="" />
+              <img
+                class="image"
+                src="images/icons/sprite.svg#drop"
+                alt="иконка капли"
+              />
             </picture>
           </div>
           <p class="component__text">Площадь и количество помещения</p>
@@ -367,7 +379,11 @@
                 media="(max-width: 768px)"
                 srcset="images/icons/sprite.svg#drop-light"
               />
-              <img class="image" src="images/icons/sprite.svg#drop" alt="" />
+              <img
+                class="image"
+                src="images/icons/sprite.svg#drop"
+                alt="иконка капли"
+              />
             </picture>
           </div>
           <p class="component__text">Степень загрязнения помещения</p>
@@ -379,14 +395,22 @@
                 media="(max-width: 768px)"
                 srcset="images/icons/sprite.svg#drop-light"
               />
-              <img class="image" src="images/icons/sprite.svg#drop" alt="" />
+              <img
+                class="image"
+                src="images/icons/sprite.svg#drop"
+                alt="иконка капли"
+              />
             </picture>
           </div>
           <p class="component__text">Дополнительные услуги</p>
         </li>
       </ul>
       <div class="component__img">
-        <img class="image" src="images/component.jpg" alt="" />
+        <img
+          class="image"
+          src="images/component.jpg"
+          alt="аксессуары для уборки"
+        />
       </div>
     </div>
   </div>
@@ -405,7 +429,7 @@
  <section class="hygiene">
   <div class="container hygiene__container">
     <div class="hygiene__img">
-      <img class="image" src="images/hygiene.jpg" alt="" />
+      <img class="image" src="images/hygiene.jpg" alt="уборщица" />
     </div>
     <div class="hygiene__info">
       <h3 class="heading hygiene__head">
@@ -430,17 +454,21 @@
     <ul class="contact__list">
       <li class="contact__item">
         <a href="https://wa.me/37368557768" class="contact__link">
-          <img class="image" src="images/icons/sprite.svg#whatsapp" alt="" />
+          <img
+            class="image"
+            src="images/icons/sprite.svg#whatsapp"
+            alt="иконка whatsapp"
+          />
         </a>
       </li>
       <li class="contact__item">
         <a href=" https://t.me/+37368557768" class="contact__link">
-          <img class="image" src="images/icons/sprite.svg#telegram" alt="" />
+          <img class="image" src="images/icons/sprite.svg#telegram" alt="иконка телеграм" />
         </a>
       </li>
       <li class="contact__item">
         <a href="viber://chat?number=%2B37368557768" class="contact__link">
-          <img class="image" src="images/icons/sprite.svg#viber" alt="" />
+          <img class="image" src="images/icons/sprite.svg#viber" alt="иконка viber" />
         </a>
       </li>
     </ul>
@@ -485,7 +513,7 @@
   <div class="container">
     <div class="footer__top">
       <div class="footer__logo">
-        <img class="image" src="images/logo-footer.svg" alt="" />
+        <img class="image" src="images/logo-footer.svg" alt="Логотип Master Cleaning" />
       </div>
       <div class="footer__menu">
         <h3 class="heading footer__head">Master Cleaning</h3>
@@ -534,14 +562,14 @@
           </a>
         </li>
         <li class="footer__soc-item">
-          <a href="https://instagram.com/" class="footer__soc-link">
+          <a href="https://facebook.com/" class="footer__soc-link">
             <svg class="footer__svg" aria-hidden="true">
               <use xlink:href="images/icons/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="footer__soc-item">
-          <a href="https://instagram.com/" class="footer__soc-link">
+          <a href="#" class="footer__soc-link">
             <svg class="footer__svg messenger" aria-hidden="true">
               <use xlink:href="images/icons/sprite.svg#messenger"></use>
             </svg>

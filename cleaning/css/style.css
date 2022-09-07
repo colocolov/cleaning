@@ -744,6 +744,7 @@ input {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  position: relative;
 }
 .about__img {
   width: 400px;
@@ -804,6 +805,7 @@ input {
   height: 285px;
   width: 2px;
   background-color: #333333;
+  z-index: 1;
 }
 .about__slide {
   display: -webkit-box;
@@ -816,6 +818,7 @@ input {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  z-index: 2;
 }
 .about__slide-head {
   font-family: "Montserrat";
@@ -834,12 +837,14 @@ input {
 .about__btn {
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
+  height: 42px;
+  width: 21px;
   cursor: pointer;
   z-index: 12;
 }
 .about__btn-prev {
-  left: 300px;
+  right: 50px;
 }
 .about__btn-fill {
   width: 21px;
@@ -854,11 +859,17 @@ input {
   stroke-width: 5;
 }
 .about__btn-next {
-  left: 370px;
   bottom: 4px;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg) translateY(-4px);
+  -ms-transform: rotate(180deg) translateY(-4px);
+  transform: rotate(180deg) translateY(-4px);
+}
+.about__slider-arr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 46px;
+  width: 100%;
 }
 
 .prices {
@@ -1052,7 +1063,6 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 .discount__text {
   font-family: "Moula";
@@ -1429,12 +1439,6 @@ input {
   }
 }
 @media (max-width: 1270px) {
-  .about__btn-prev {
-    left: 200px;
-  }
-  .about__btn-next {
-    left: 270px;
-  }
   .component__list {
     width: 304px;
   }
@@ -1921,12 +1925,6 @@ input {
   }
   .mainvideo__descr {
     width: 80%;
-  }
-  .about__btn-prev {
-    left: 170px;
-  }
-  .about__btn-next {
-    left: 220px;
   }
   .about__descr {
     left: 15px;
