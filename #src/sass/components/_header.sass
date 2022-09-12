@@ -6,6 +6,7 @@
     align-items: flex-end
     justify-content: space-between
   &__logo
+    margin-right: 50px
     width: 40px
     height: 49px
   &__menu
@@ -14,13 +15,12 @@
     margin-left: 50px
     margin-right: 50px !important
   &__ru
+    position: relative
     margin-left: 0px
     margin-right: 19px !important
-    // font-weight: 700
-    position: relative
     &::before
-      content: ' / '
       position: absolute
+      content: ' / '
       top: 0
       right: -5px
       color: $black
@@ -29,4 +29,6 @@
       color: $green
       font-weight: 700
   &__ro
-    // margin-right: 5px
+    &.active
+      color: $green
+      font-weight: 700

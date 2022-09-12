@@ -4,20 +4,20 @@
     display: flex
     align-items: flex-start
   &__img
+    flex-shrink: 0
+    margin-right: 96px
     width: 400px
     height: 530px
-    margin-right: 96px
-    flex-shrink: 0
   &__head
-    margin-bottom: 40px
     position: relative
+    margin-bottom: 40px
     &::before
       position: absolute
       content: ''
-      height: 2px
-      width: 100%
       bottom: -18px
       left: 0
+      height: 2px
+      width: 100%
       background-color: $text
   &__info
     p

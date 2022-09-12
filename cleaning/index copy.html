@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111111" />
+  <!-- подключение стилей -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css?ver=1.0.3" />
+  <!-- подключение скриптов -->
+  <script defer src="js/vendor/swiper-bundle.min.js"></script>
+  <script defer src="js/main.min.js"></script>
+  <!-- подключение favicon -->
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="images/favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="images/favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="images/favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="images/favicon/site.webmanifest" />
+  <link
+    rel="mask-icon"
+    href="images/favicon/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <title>Master Cleaning - уборка помещений</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="container header__container">
+    <div class="header__logo">
+      <picture>
+        <source media="(max-width:768px)" srcset="images/logo-light.svg" />
+        <img class="image" src="images/logo.svg" alt="Логотип Master Cleaning" />
+      </picture>
+    </div>
+    <div class="header__menu menu">
+      <nav class="menu__body">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#about">о нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#prices">цены на услуги</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#components">как формируется цена?</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#process">процесс работы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contacts">контакты</a>
+          </li>
+        </ul>
+        <ul class="menu__list header__sec">
+          <li class="menu__item header__phone">
+            <a class="menu__link" href="tel:+37368557768">+373 68 55 77 68</a>
+          </li>
+          <li class="menu__item header__ru active">
+            <a class="menu__link" href="#">RU</a>
+          </li>
+          <li class="menu__item header__ro">
+            <a class="menu__link" href="#">RO</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="menu__icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+ <section class="mainvideo">
+  <div class="container mainvideo__container">
+    <div class="mainvideo__info">
+      <div class="mainvideo__descr">
+        <h1 class="heading mainvideo__head">Master Cleaning</h1>
+        <span>Быстрая и качественная уборка любого помещения в Молдове</span>
+      </div>
+      <ul class="mainvideo__list">
+        <li class="mainvideo__item">
+          <a href="https://instagram.com/" class="mainvideo__link">
+            <svg class="mainvideo__svg" aria-hidden="true">
+              <use xlink:href="images/icons/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mainvideo__item">
+          <a href="https://facebook.com/" class="mainvideo__link">
+            <svg class="mainvideo__svg" aria-hidden="true">
+              <use xlink:href="images/icons/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mainvideo__item">
+          <a href="#" class="mainvideo__link">
+            <svg class="mainvideo__svg messenger" aria-hidden="true">
+              <use xlink:href="images/icons/sprite.svg#messenger"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mainvideo__clip">
+      <video
+        src="main_video.mp4"
+        playsinline
+        muted
+        autoplay
+        loop
+        class="mainvideo__video"
+      ></video>
+    </div>
+  </div>
+</section>
+
+      <section class="about" id="about">
+  <div class="container">
+    <h2 class="heading about__head">О нас</h2>
+    <div class="about__info">
+      <div class="about__img">
+        <img class="image" src="images/about.jpg" alt="Уборка робот-пылесосом" />
+      </div>
+      <div class="about__descr">
+        <p class="about__text">
+          Компания <strong>Master Cleaning</strong> работает в сфере клинига
+          более <strong>10</strong> лет. наша главная задача, чтобы наш клиент
+          остался доволен результатом. По этой причине мы прикладываем все
+          усилия, чтобы выполнять работу качественно, быстро. Опыт наших
+          работников позволяет нам достичь поставленных целей.
+        </p>
+        <button class="btn-reset about__more">Подробнее</button>
+      </div>
+
+      <div class="about__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide about__slide">
+            <h3 class="heading about__slide-head">Опытные клинеры</h3>
+            <p>Каждый сотрудник проходит строгий отбор и обучение</p>
+          </div>
+          <div class="swiper-slide about__slide">
+            <h3 class="heading about__slide-head">Забота о клиенте</h3>
+            <p>
+              Мы готовы в любое время ответить на ваши звонки и предложить
+              лучшие условия
+            </p>
+          </div>
+          <div class="swiper-slide about__slide">
+            <h3 class="heading about__slide-head">
+              Качественная бытовая химия
+            </h3>
+            <p>
+              Мы используем проверенную временем, качественную бытовую химию
+            </p>
+          </div>
+          <div class="swiper-slide about__slide">
+            <h3 class="heading about__slide-head">Гарантия качества</h3>
+            <p>
+              Мы исправим недочёты, которые вам не понравятся. Для нас важно
+              качество наших услуг
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="about__slider-arr">
+        <div class="about__btn about__btn-prev">
+          <svg class="about__btn-fill" aria-hidden="true">
+            <use xlink:href="images/icons/sprite.svg#arrow-slider"></use>
+          </svg>
+        </div>
+        <div class="about__btn about__btn-next">
+          <svg class="about__btn-fill" aria-hidden="true">
+            <use xlink:href="images/icons/sprite.svg#arrow-slider"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="prices" id="prices">
+  <div class="container prices__container">
+    <div class="prices__left">
+      <h2 class="heading prices__head">Цены на услуги</h2>
+      <a href="tel:+37368557768" class="btn-reset btn prices__btn">Call now</a>
+    </div>
+    <div class="prices__right">
+      <ul class="prices__list">
+        <li class="prices__item">
+          <div class="prices__service">
+            <h3 class="prices__service-title">Генеральная уборка</h3>
+            <span class="prices__service-price">От 25 лей/м2</span>
+          </div>
+          <div class="prices__descr">
+            Мы отмоем все поверхности вашего помещения, продезинфицируем
+            санузел, очистим сантехнику от известкового налета.
+          </div>
+        </li>
+        <li class="prices__item">
+          <div class="prices__service">
+            <h3 class="prices__service-title">Уборка офиса</h3>
+            <span class="prices__service-price">От 25 лей/м2</span>
+          </div>
+          <div class="prices__descr">
+            В зависимости от величины помещения, мы отправим к вам достаточное
+            количество сотрудников, со всем необходимым для профессиональной
+            уборки.
+          </div>
+        </li>
+        <li class="prices__item">
+          <div class="prices__service">
+            <h3 class="prices__service-title">Уборка после ремонта</h3>
+            <span class="prices__service-price">От 35 лей/м2</span>
+          </div>
+          <div class="prices__descr">
+            Мы тщательно удалим пыль со всех поверхностей, отмоем засохший клей,
+            шпаклевку, краску, и другие сильные загрязнения.
+          </div>
+        </li>
+        <li class="prices__item">
+          <div class="prices__service">
+            <h3 class="prices__service-title">Мойка окон</h3>
+            <span class="prices__service-price">От 25 лей/м2</span>
+          </div>
+          <div class="prices__descr">
+            Мы моем окна изнутри и снаружи, используя специальные инструменты и
+            качественные моющие средства. Также моем окна после ремонта.
+          </div>
+        </li>
+        <li class="prices__item">
+          <div class="prices__service">
+            <h3 class="prices__service-title">Поддерживающая уборка</h3>
+            <span class="prices__service-price">От 15 лей/м2</span>
+          </div>
+          <div class="prices__descr">
+            Мы предлагаем комплекс услуг, который поможет вам сохранить уют и
+            чистоту в ваших домах, офисах и других помещениях.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="process" id="process">
+  <div class="container process__container">
+    <h2 class="heading process__head">Процесс работы</h2>
+    <div class="process__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide process__slide">
+          <picture class="process__img">
+            <source
+              media="(max-width: 768px)"
+              srcset="images/process-slider/slide-1-mini.jpg"
+            />
+            <img
+              class="image"
+              src="images/process-slider/slide-1.jpg"
+              alt="Уборка кухни"
+            />
+          </picture>
+          <ul class="process__list">
+            <li class="process__item">Моем фасады и мебель</li>
+            <li class="process__item">Протираем все поверхности</li>
+            <li class="process__item">Протираем двери</li>
+            <li class="process__item">Моем плиту, раковину и столешницу</li>
+            <li class="process__item">Протираем выключатели</li>
+            <li class="process__item">Протераем подаконники и батареи</li>
+            <li class="process__item">Сухая и влажная уборка пола</li>
+          </ul>
+        </div>
+        <div class="swiper-slide process__slide">
+          <picture class="process__img">
+            <source
+              media="(max-width: 768px)"
+              srcset="images/process-slider/slide-2-mini.jpg"
+            />
+            <img
+              class="image"
+              src="images/process-slider/slide-2.jpg"
+              alt="Уборка жилых помещений"
+            />
+          </picture>
+          <ul class="process__list">
+            <li class="process__item">Убираем и выносим мусор</li>
+            <li class="process__item">
+              Моем зеркала и все стеклянные поверхности
+            </li>
+            <li class="process__item">
+              Протераем все поверхности, открытые места,подаконники и батареи.
+            </li>
+            <li class="process__item">Сухая и влажная уборка пола.</li>
+          </ul>
+        </div>
+        <div class="swiper-slide process__slide">
+          <picture class="process__img">
+            <source
+              media="(max-width: 768px)"
+              srcset="images/process-slider/slide-3-mini.jpg"
+            />
+            <img
+              class="image"
+              src="images/process-slider/slide-3.jpg"
+              alt="Уборка ванных"
+            />
+          </picture>
+          <ul class="process__list">
+            <li class="process__item">
+              Протераем все поверхности, открытые места
+            </li>
+            <li class="process__item">
+              Моем зеркала и все стеклянные поверхности
+            </li>
+            <li class="process__item">Дезинфецыруем и моем унитаз</li>
+            <li class="process__item">Моем раковину</li>
+            <li class="process__item">Моем душевую кабину, ванную</li>
+            <li class="process__item">Сухая и влажная уборка пола</li>
+          </ul>
+        </div>
+      </div>
+      <div class="process__btn process__btn-prev">
+        <svg class="process__btn-fill" aria-hidden="true">
+          <use xlink:href="images/icons/sprite.svg#arrow-slider"></use>
+        </svg>
+      </div>
+      <div class="process__btn process__btn-next">
+        <svg class="process__btn-fill" aria-hidden="true">
+          <use xlink:href="images/icons/sprite.svg#arrow-slider"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="component" id="components">
+  <div class="container component__container">
+    <div class="component__left">
+      <h2 class="heading component__head">Как формируется цена?</h2>
+      <a href="tel:+37368557768" class="btn-reset btn component__btn"
+        >Call now</a
+      >
+    </div>
+    <div class="component__right">
+      <ul class="component__list">
+        <li class="component__item">
+          <div class="component__icon">
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="images/icons/sprite.svg#drop-light"
+              />
+              <img
+                class="image"
+                src="images/icons/sprite.svg#drop"
+                alt="иконка капли"
+              />
+            </picture>
+          </div>
+          <p class="component__text">Частота уборки помещения</p>
+        </li>
+        <li class="component__item">
+          <div class="component__icon">
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="images/icons/sprite.svg#drop-light"
+              />
+              <img
+                class="image"
+                src="images/icons/sprite.svg#drop"
+                alt="иконка капли"
+              />
+            </picture>
+          </div>
+          <p class="component__text">Площадь и количество помещения</p>
+        </li>
+        <li class="component__item">
+          <div class="component__icon">
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="images/icons/sprite.svg#drop-light"
+              />
+              <img
+                class="image"
+                src="images/icons/sprite.svg#drop"
+                alt="иконка капли"
+              />
+            </picture>
+          </div>
+          <p class="component__text">Степень загрязнения помещения</p>
+        </li>
+        <li class="component__item">
+          <div class="component__icon">
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="images/icons/sprite.svg#drop-light"
+              />
+              <img
+                class="image"
+                src="images/icons/sprite.svg#drop"
+                alt="иконка капли"
+              />
+            </picture>
+          </div>
+          <p class="component__text">Дополнительные услуги</p>
+        </li>
+      </ul>
+      <div class="component__img">
+        <img
+          class="image"
+          src="images/component.jpg"
+          alt="аксессуары для уборки"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="discount">
+  <div class="container">
+    <div class="discount__text">
+      Каждая <span>5</span> уборка скидка <span>10%</span>
+    </div>
+    <a href="tel:+37368557768" class="btn-reset btn discount__btn"
+      >Заказать уборку</a
+    >
+  </div>
+</section>
+ <section class="hygiene">
+  <div class="container hygiene__container">
+    <div class="hygiene__img">
+      <img class="image" src="images/hygiene.jpg" alt="уборщица" />
+    </div>
+    <div class="hygiene__info">
+      <h3 class="heading hygiene__head">
+        Для каждого помещения предусмотрена разная хозяйственная тряпка
+      </h3>
+      <p>
+        Гигиена для нашей компании приоритет номер один. По этой причине мы
+        предусмотрели, чтобы наши клинеры убирали в разных помещениях, разными
+        хозяйственными тряпками.
+      </p>
+      <p>
+        Прежде чем приступить к выполнению роботы, наши клинеры раскажут вам
+        какой цвет тряпки, предусмотрен для какого помещения.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="contact" id="contacts">
+  <div class="container contact__container">
+    <h2 class="heading contact__head">Свяжитесь с нами</h2>
+    <ul class="contact__list">
+      <li class="contact__item">
+        <a href="https://wa.me/37368557768" class="contact__link">
+          <img
+            class="image"
+            src="images/icons/sprite.svg#whatsapp"
+            alt="иконка whatsapp"
+          />
+        </a>
+      </li>
+      <li class="contact__item">
+        <a href=" https://t.me/+37368557768" class="contact__link">
+          <img class="image" src="images/icons/sprite.svg#telegram" alt="иконка телеграм" />
+        </a>
+      </li>
+      <li class="contact__item">
+        <a href="viber://chat?number=%2B37368557768" class="contact__link">
+          <img class="image" src="images/icons/sprite.svg#viber" alt="иконка viber" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+ <section class="faq" id="faq">
+  <div class="container faq__container">
+    <h2 class="heading faq__head">Частые вопросы</h2>
+    <ul class="accordeon">
+      <li class="accordeon__item">
+        <h3 class="accordeon__name">Нужно ли быть дома во время уборки?</h3>
+        <p class="accordeon__content">
+          Как правило, хозяин дома находится дома во время уборки помещения. Но
+          с Master Cleaning вы можете спокойно отправиться по своим делам, так
+          как наша компания застрахована у лучшей страховой компании.
+        </p>
+      </li>
+      <li class="accordeon__item">
+        <h3 class="accordeon__name">Сколько времени длится уборка?</h3>
+        <p class="accordeon__content">
+          Это зависит от объёма и степени загрязнения. <br />Поддерживающая
+          уборка 2-4 часа <br />Генеральная уборка 4-6 часов <br />Уборка после
+          ремонта 6-12 часов
+        </p>
+      </li>
+      <li class="accordeon__item">
+        <h3 class="accordeon__name">
+          Вы работаете со своей химией и инвентарем?
+        </h3>
+        <p class="accordeon__content">
+          Master Cleaning выезжает на заказ с полной комплектацией всех
+          необходимых средств и материалов, используя самую лучшую технику.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+      <main class="main"></main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <img class="image" src="images/logo-footer.svg" alt="Логотип Master Cleaning" />
+      </div>
+      <div class="footer__menu">
+        <h3 class="heading footer__head">Master Cleaning</h3>
+        <nav>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#about" class="footer__link">О нас</a>
+            </li>
+            <li class="footer__item">
+              <a href="#prices" class="footer__link">Цены на услуги</a>
+            </li>
+            <li class="footer__item">
+              <a href="#faq" class="footer__link">Частые вопросы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__services">
+        <h3 class="heading footer__head">Услуги</h3>
+        <nav>
+          <ul class="footer__list">
+            <li class="footer__item">Генеральная уборка</li>
+            <li class="footer__item">Уборка офиса</li>
+            <li class="footer__item">Уборка после ремонта</li>
+            <li class="footer__item">Мойка окон</li>
+            <li class="footer__item">Поддерживающая уборка</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <a
+        href="mailto:info@mastercleaning.md"
+        class="footer__contact footer__email"
+        >info@mastercleaning.md</a
+      >
+      <a href="tel:+37368557768" class="footer__contact footer__phone"
+        >+373 68 55 77 68</a
+      >
+      <ul class="footer__soc-list">
+        <li class="footer__soc-item">
+          <a href="https://instagram.com/" class="footer__soc-link">
+            <svg class="footer__svg" aria-hidden="true">
+              <use xlink:href="images/icons/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__soc-item">
+          <a href="https://facebook.com/" class="footer__soc-link">
+            <svg class="footer__svg" aria-hidden="true">
+              <use xlink:href="images/icons/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__soc-item">
+          <a href="#" class="footer__soc-link">
+            <svg class="footer__svg messenger" aria-hidden="true">
+              <use xlink:href="images/icons/sprite.svg#messenger"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

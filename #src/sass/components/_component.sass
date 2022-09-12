@@ -11,29 +11,29 @@
   &__btn
     display: inline-block
   &__right
-    margin-left: 20px
-    border-left: 2px solid $text
-    padding-left: 20px
     display: flex
     align-items: flex-start
+    margin-left: 20px
+    padding-left: 20px
+    border-left: 2px solid $text
   &__list
-    width: 388px
     flex-shrink: 0
+    width: 388px
     margin-right: 10px
     counter-reset: section
   &__item
     position: relative
     &::before
       position: absolute
+      content: counter(section)
       left: 10px
       top: 16px
+      width: 17px
       font-family: "Moula"
       @include font(700, 28, 28)
+      text-align: center
       color: $white
       counter-increment: section
-      content: counter(section)
-      width: 17px
-      text-align: center
       z-index: 3
     &:not(:last-child)
       margin-bottom: 63px
@@ -41,15 +41,12 @@
     width: 38px
     height: 50px
     margin-bottom: 5px
-    // animation
     opacity: 0
     transform: translateY(-50px)
     &.element-show
       opacity: 1
       transition: all 1.5s
       transform: translateY(0%)
-  &__text
-    // @include font(500, 20, 24)
   &__img
     width: 400px
     height: 530px

@@ -1,14 +1,12 @@
 .discount
-  @include mb
-  background-color: $black
   height: 500px
+  @include mb
   padding-top: 65px
+  background-color: $black
   background-image: url(../images/discount.jpg)
   background-repeat: no-repeat
   background-size: cover
   background-position: center
-  // background-attachment: fixed
-
   &__text
     font-family: 'Moula'
     @include font(700, 128, 138)
@@ -19,3 +17,5 @@
     padding: 18px 35px
     transform: translate(704px, -90px)
     text-transform: none
+    &-ro
+      transform: translate(784px, -90px)

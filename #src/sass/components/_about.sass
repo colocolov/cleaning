@@ -3,21 +3,20 @@
   &__head
     margin-bottom: 10px
   &__info
+    position: relative
     display: flex
     align-items: flex-end
-    position: relative
   &__img
+    flex-shrink: 0
     width: 400px
     height: 570px
-    flex-shrink: 0
     margin-right: 20px
   &__descr
     position: relative
-    font-weight: 400
-    width: 362px
     flex-shrink: 0
+    width: 362px
     margin-right: 59px
-
+    font-weight: 400
   &__text
     height: 99px
     // для плавного появления всего тееста
@@ -29,15 +28,12 @@
     margin-bottom: 20px
     transition: height 0.3s linear
   &__opened
-    // height: auto
-    // overflow: auto
     margin-bottom: 0
   &__more
+    position: relative
     font-weight: 700
     text-transform: uppercase
-    position: relative
     &::before
-      transition: background 0.3s linear
       position: absolute
       content: ''
       bottom: -3px
@@ -45,6 +41,7 @@
       height: 2px
       width: 100%
       background-color: $text
+      transition: background 0.3s linear
   &__slider
     position: relative
     height: 285px
@@ -63,27 +60,23 @@
     flex-direction: column
     align-items: flex-start
     z-index: 2
-    // opacity: 1 !important
     &-head
+      width: 250px
+      margin-bottom: 20px
       font-family: 'Montserrat'
       @include font(700, 20, 24)
       text-transform: none
-      margin-bottom: 20px
-      width: 250px
     p
-      // @include font(500, 20, 24)
-      width: 242px
       flex-shrink: 0
+      width: 242px
   &__btn
     position: absolute
-    // top: 50%
-    // transform: translateY(-50%)
     bottom: 0
     right: 0
     height: 42px
     width: 21px
-    cursor: pointer
     z-index: 12
+    cursor: pointer
     &-prev
       right: 50px
     &-fill
@@ -95,10 +88,8 @@
       stroke: $text
       stroke-width: 5
     &-next
-      // right: 0px
       bottom: 4px
       transform: rotate(180deg) translateY(-4px)
-
   &__slider-arr
     position: absolute
     bottom: 0
